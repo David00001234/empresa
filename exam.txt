@@ -1,0 +1,365 @@
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git add .
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git commit -m "empleados"
+[recurso_humano a0cfabe] empleados
+ 1 file changed, 5 insertions(+)
+ create mode 100644 empleados.txt
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git push origin recurso_humano
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 386 bytes | 386.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'recurso_humano' on GitHub by visiting:
+remote:      https://github.com/David00001234/empresa/pull/new/recurso_humano
+remote:
+To https://github.com/David00001234/empresa.git
+ * [new branch]      recurso_humano -> recurso_humano
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git merge produccion
+Updating 0c40b13..f846fa9
+Fast-forward
+ producciones/imagenproducto.jpg | Bin 0 -> 2948 bytes
+ producciones/materia prima.txt  |   0
+ producciones/productofinal.txt  |   0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 producciones/imagenproducto.jpg
+ create mode 100644 producciones/materia prima.txt
+ create mode 100644 producciones/productofinal.txt
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git commit -m "fusion de produccion a main"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/David00001234/empresa.git
+   0c40b13..f846fa9  main -> main
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git log --oneline --graph --decorate
+* f846fa9 (HEAD -> main, origin/produccion, origin/main, origin/HEAD, produccion) contenido de producto
+* 0c40b13 Initial commit
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git tag version1.0 -m "version 1.0"
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git log --oneline --graph --decorate
+* f846fa9 (HEAD -> main, tag: version1.0, origin/produccion, origin/main, origin/HEAD, produccion) contenido de producto
+* 0c40b13 Initial commit
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git push --tag
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 168 bytes | 168.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/David00001234/empresa.git
+ * [new tag]         version1.0 -> version1.0
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git log --oneline --graph --decorate
+* f846fa9 (HEAD -> main, tag: version1.0, origin/produccion, origin/main, origin/HEAD, produccion) contenido de producto
+* 0c40b13 Initial commit
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git checkout recurso_humano
+Switched to branch 'recurso_humano'
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git add .
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git commit -m "5 empleados mas"
+[recurso_humano d70c36d] 5 empleados mas
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git push origin recurso_humano
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 441 bytes | 441.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/David00001234/empresa.git
+   a0cfabe..d70c36d  recurso_humano -> recurso_humano
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git diff
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git log --online
+fatal: unrecognized argument: --online
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git log --oneline
+d70c36d (HEAD -> recurso_humano, origin/recurso_humano) 5 empleados mas
+a0cfabe empleados
+0c40b13 Initial commit
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git add .
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git commit -m "5 empleados mas"
+[recurso_humano 5f92dde] 5 empleados mas
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git diff
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git diff empleados.txt
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git diff
+diff --git a/empleados.txt b/empleados.txt
+index e42911f..a7c1804 100644
+--- a/empleados.txt
++++ b/empleados.txt
+@@ -4,8 +4,3 @@ Diego Armando Moran Diaz.
+ Esteban Carvajal aguero.
+ lepe cesar.
+
+-luis Angel Moran diaz.
+-ismael.
+-juan David Gonzales Garcia.
+-Juan diego Gonzales Miramontes.
+-rafael.
+\ No newline at end of file
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git diff
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git diff
+diff --git a/empleados.txt b/empleados.txt
+index e42911f..154fed0 100644
+--- a/empleados.txt
++++ b/empleados.txt
+@@ -4,8 +4,8 @@ Diego Armando Moran Diaz.
+ Esteban Carvajal aguero.
+ lepe cesar.
+
+-luis Angel Moran diaz.
+-ismael.
+-juan David Gonzales Garcia.
+-Juan diego Gonzales Miramontes.
+-rafael.
+\ No newline at end of file
++armando
++sofia
++nadia
++marcelo
++miguel
+\ No newline at end of file
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git add .
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git commit -m "5 empleados mas"
+[recurso_humano 99f24e6] 5 empleados mas
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git push origin recurso_humano
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 639 bytes | 319.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/David00001234/empresa.git
+   d70c36d..99f24e6  recurso_humano -> recurso_humano
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git merge recurso_humano
+Merge made by the 'ort' strategy.
+ empleados.txt | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+ create mode 100644 empleados.txt
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git commit -m "fusion de recurso_humano a main"
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 374 bytes | 374.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/David00001234/empresa.git
+   f846fa9..aa411ec  main -> main
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git log --oneline --graph --decorate
+*   aa411ec (HEAD -> main, origin/main, origin/HEAD) "fusion :wq" :wq
+|\
+| * 99f24e6 (origin/recurso_humano, recurso_humano) 5 empleados mas
+| * 5f92dde 5 empleados mas
+| * d70c36d 5 empleados mas
+| * a0cfabe empleados
+* | f846fa9 (tag: version1.0, origin/produccion, produccion) contenido de producto
+|/
+* 0c40b13 Initial commit
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git tag version1.1 -m "version 1.1"
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git push --tag
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 167 bytes | 167.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/David00001234/empresa.git
+ * [new tag]         version1.1 -> version1.1
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git log --oneline --graph --decorate
+*   aa411ec (HEAD -> main, tag: version1.1, origin/main, origin/HEAD) "fusion :wq" :wq
+|\
+| * 99f24e6 (origin/recurso_humano, recurso_humano) 5 empleados mas
+| * 5f92dde 5 empleados mas
+| * d70c36d 5 empleados mas
+| * a0cfabe empleados
+* | f846fa9 (tag: version1.0, origin/produccion, produccion) contenido de producto
+|/
+* 0c40b13 Initial commit
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git checkout ventas
+Switched to branch 'ventas'
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (ventas)
+$ git add .
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (ventas)
+$ git commit -m "5 empresas"
+[ventas 74d3ab2] 5 empresas
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ventas/bodega.txt
+ create mode 100644 ventas/electra.txt
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (ventas)
+$ git push origin ventas
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 351 bytes | 175.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/David00001234/empresa.git
+   191a6d5..74d3ab2  ventas -> ventas
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (ventas)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        fotos_empleados/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git add .
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git commit -m "fotos de empleados"
+[main 393216c] fotos de empleados
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fotos_empleados/01.jpg
+ create mode 100644 fotos_empleados/02.jpg
+ create mode 100644 fotos_empleados/03.jpg
+ create mode 100644 fotos_empleados/04.jpg
+ create mode 100644 fotos_empleados/05.jpg
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 35.34 KiB | 7.07 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/David00001234/empresa.git
+   aa411ec..393216c  main -> main
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (main)
+$ git checkout recurso_humano
+Switched to branch 'recurso_humano'
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git status
+On branch recurso_humano
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sueldos.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git add .
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git commit -m "sueldos de 4 puestos"
+[recurso_humano 05badf1] sueldos de 4 puestos
+ 1 file changed, 4 insertions(+)
+ create mode 100644 sueldos.txt
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git push origin recurso_humano
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 358 bytes | 179.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/David00001234/empresa.git
+   99f24e6..05badf1  recurso_humano -> recurso_humano
+
+David Rodrigo@DESKTOP-30S9ANQ MINGW64 /c/Git/empresa/empresa (recurso_humano)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
