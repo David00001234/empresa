@@ -1,0 +1,4 @@
+cajero 300
+taquero 400
+planchero 400
+mesero 250
